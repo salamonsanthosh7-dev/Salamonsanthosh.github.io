@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    
+    background-color: black;
+    color: white;
+}
+
+
+h1,li,ul{
+    display: inline;
+    margin-right: 10px;
+}
+
+ul{
+    margin-left: 60%;
+}
+
+
+li{
+    color: grey;
+    cursor: pointer;
+}
+
+li:hover{
+    color: orange;
+}
+@media screen and (min-width: 320px)
+{
+    nav{
+        width: 166%;
+        margin-left: -20%;
+    }
+    
+}
+
+@media screen and (min-width: 768px)
+{
+    nav{
+        width: 145%;
+    }
+    
+}
+
+@media screen and (min-width: 1024px)
+{
+    nav{
+        margin-left: -40%;
+        width: 168%;
+        height: 20%;
+    }
+    .header h1{
+        font-size: 60px;
+    }
+    .header ul{
+        font-size: 30px;
+    }
+    
+}
+@media screen and (max-width: 320px)    
+{
+    ul{
+        margin-left: 15%;
+        font-size: small;
+    }
+}
+
+
+input{
+    position: relative;
+    width:40%;
+    padding: 2%;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+
+}
+
+.result{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.searchbar{
+    
+    padding: 25px;
+    text-align: center;
+}
+
+
+.searchbar input:focus{
+    border-radius: 25px;
+    border-color: blue;
+}
+@media screen and (max-width: 320px)
+{
+    .searchbar{
+        width: 100%;
+        margin-left: -35%;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .searchbar input,p,button{
+        font-size: large;
+        width: 50%;
+        height: 60px;
+        margin-left: 50%;
+    }
+}
+
+.Products{
+    position: relative;
+    display: inline-block;
+    
+}
+
+.Products img{
+    display: flex;
+   justify-content: flex-start;
+    width: 105%;
+    height: 59%;
+    
+}
+@media screen and (min-width: 320px)
+{
+    .products img{
+        width: 146%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .products img{
+        width: 145%;
+        height: 105%;
+    }
+    
+}
+@media screen and (min-width: 1024px) {
+    .products img{
+        width: 169.5%;
+        height: 105%;
+    }
+    
+}
+
+.overlay-text{
+    
+    position: absolute;
+    top: 10%;
+    left: -30%;
+}
+
+.overlay-text option{
+
+    flex-basis: 2%;
+}
+
+.overlay-text :hover{
+    background-color: orange;
+    color: white;
+}
+@media screen and (min-width: 320px){
+    .overlay-text{
+        top: 30%;
+        left: -10%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .overlay-text{
+        top: 45%;
+        left: 20%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .overlay-text td{
+        font-size: 180%;
+        top: 45%;
+        left: 20%;
+    }
+}
+
+form{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 60%;
+    
+}
+
+.Products1{
+    position: relative;
+    display: inline-block;
+}
+
+.Products1 img{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-left: 0px;
+}
+
+@media screen and (min-width: 320px)
+{
+    .Products1 img{
+        width: 146%;
+    }
+}
+@media screen and (min-width: 768px)
+{
+    .products1 img{
+        width: 153.7%;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .products1 img{
+        width: 237.4%;
+    }
+}
+
+.overlay-text1{
+    position: absolute;
+    top: 45%;
+    left: 0%;
+}
+
+.overlay-text1 :hover{
+    background-color: orange;
+    color: white;
+}
+@media screen and (min-width: 320px)
+{
+    .overlay-text1{
+        left: 20%;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .overlay-text1{
+        left: 50%;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .overlay-text1 table{
+        font-size: 30px;
+        
+    }
+}
+
+.techproduct{   
+    position: relative;
+    display: inline-block;
+}
+
+.techproduct img{
+    display: flex;
+    flex-basis: 50%;
+    right: 50%;
+    width: 100%;
+    height: 70%;
+
+}
+
+.techproduct .tech{
+    position: absolute;
+    padding-top: 100px;
+    top: 150px;
+    right: 60%;
+    font-size: medium;
+
+}
+
+
+.tech :hover{
+    background-color: orange;
+    color: white;
+}
+@media screen and (min-width: 320px)
+{
+    .techproduct img{
+        width: 146%;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .techproduct img{
+        width: 145%;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .techproduct img{
+        width: 168%;
+        height: 91%;
+    }
+}
+@media screen and (min-width: 320px)
+{
+    .tech{
+        font-size: 30px;
+        margin-top: 10%;
+    }
+}
+
+.About{
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.Contact{
+    text-align: center;
+    margin-right: 120%;
+}
+
+@media screen and (min-width: 320px)
+{
+    .Contact{
+        margin-right: 110%;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .Contact{
+        margin-right: 60%;
+        font-size: medium;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .Contact{
+        margin-right: 45%;
+    }
+}

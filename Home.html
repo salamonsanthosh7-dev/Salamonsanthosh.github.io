@@ -1,0 +1,175 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    
+    <script>
+        
+        function searchMenu()
+        {
+            const input=document.getElementById("   ").value.toLowerCase()
+            const nonvegOption =document.querySelectorAll("#foodList option")
+            const vegOption =document.querySelectorAll("#Veg option")
+            const gadgetsOption =document.querySelectorAll("#Gadgets option")
+            
+            let found=false;
+
+            nonvegOption.forEach(opt=> {
+                if (opt.textContent.toLowerCase() === input){
+                    document.getElementById("result").textContent ="🍗Non veg is available";
+                    found=true
+                }
+            });
+            vegOption.forEach(opt=> {
+                if (opt.textContent.toLowerCase() === input){
+                    document.getElementById("result").textContent="✅ veg is available";
+                    found=true
+                    
+                }
+            });
+
+            gadgetsOption.forEach( opt=> {
+                if (opt.textContent.toLowerCase() === input){
+                    document.getElementById("result").textContent="📱Gadgets Available"
+                    found=true
+                }
+            });
+
+
+
+            if(!found){
+                document.getElementById("result").textContent="Not Available See Menu"
+            }
+            
+            
+        }
+        
+
+    </script>
+    <div class="header">
+        <nav>
+            <center><h1>Foodie Dood</h1></center>
+            <ul>
+                <a href="Home.html"><li>Home</li></a>
+                <a href="#foodList"><li>Foodie</li></a>
+                <a href="#About us"><li>About Us</li></a>
+                <a href="#contact us"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </div>
+    <div class="searchbar">
+        <input id="search-here" placeholder="Search">
+        <p id="result"></p>
+        <button onclick="searchMenu()" style="background-color: black; color: white;font-family: 'Segoe UI';border: 2px solid grey;border-radius: 25px;cursor: pointer; ">Search</button>
+        
+
+    </div>
+
+    
+    <div class="Products">
+        <img src="food2.jpg">
+        <div class="overlay-text">
+        <form>
+            <table >
+                <tr>
+                        <td style="color: orange; padding-top:0%;"> <h1>N </h1><br><h1 >O</h1><br><h1>N</h1><h2 style="color: red;">Veg</h2></td> 
+                    <td>
+                        <select id="foodList" style="background-color: wheat;border: 2px dotted grey;border-radius: 25px;">
+                            <option>--Choose--</option>
+                            <option>Biriyani</option>
+                            <option>Chicken Fried Rice</option>
+                            <option>Chicken Noodles</option>
+                            <option>Chicken Butter Masala </option>
+                            <option>Mutton Fry</option>
+                            <option>Mojito</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </div> 
+        
+    <div class="Products1">
+        <img src="food 1.jpg">
+        <div class="overlay-text1">
+             <form>
+            <table>
+                <tr>
+                        <td style="color: orange;"><h1>Veg</h1></td> 
+                    <td>
+                        <select id="Veg" style="background-color: wheat;border: 2px dotted grey;border-radius: 25px;">
+                            <option>--Choose--</option>
+                            <option>Sambar Rice</option>
+                            <option>Variety Rice</option>
+                            <option>Chappati</option>
+                            <option>Channa Gravy</option>
+                            <option>Veg-kuruma </option>
+                            <option>Fresh Juice</option>    
+                        </select>
+                    </td>
+                </tr>
+            </table>
+             </form>
+        </div>
+    </div>
+
+     <div class="techproduct">
+        <img src="laptop-with-glowing-screen-table-dark-top-view-copy-space.jpg">
+        <div class="tech">
+             <form>
+            <table>
+                <tr>
+                        <td style="color: black; color: grey;"><h1>Gadgets</h1></td> 
+                    <td>
+                        <select id="Gadgets" style="background-color: wheat;border: 2px dotted grey;border-radius: 25px;">
+                            <option>--Choose--</option>
+                            <option>Mobile</option>
+                            <option>Household Gadgets</option>
+                            <option>laptops</option>
+                            <option>camera</option>
+                            <option>Exercise Gadget</option>
+                            <option>Tv</option>
+                            
+                        </select>
+                    </td>
+                </tr>
+            </table>
+             </form>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <div id="About us"class="About">
+        <h1>About</h1>
+       <h2>Hi,this is santhosh.. <br>This is a website to order food and tech gadgets</h2>
+        
+    </div>
+    <br>
+    <hr>
+    <hr>
+    
+        <center><h1>Contact</h1></center>
+    <div id="contact us" class="Contact">
+       
+        
+        <form style="justify-content: space-between;">
+            <table style="margin-right: 90px;">
+                <tr>
+                    <td style="padding-left: 100%;"><a href="https://www.linkedin.com/in/salamon-santhosh?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin</a></td> <td><a href="">Naukri</a></td>
+                    <td style="padding-left: 100%;"><a href="mailto:salamonsanthosh7@gmail.com">Gmail</a></td>
+                </tr>
+                
+            </table>
+        </form>
+        
+    </div>
+
+    <div></div>
+</body>
+</html>
